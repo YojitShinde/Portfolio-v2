@@ -63,6 +63,27 @@
     font-family: 'PT Serif', serif;
     font-size: 2.5em;
 }
+.company-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.company-heading-text{
+    display: flex;
+    flex-direction: column;
+}
+.company-logo{
+    display: block;
+    object-fit: contain;
+    height: auto;
+    flex-shrink: 0;
+}
+.qworks-logo{
+    width: 150px;
+}
+.mindgate-logo{
+    width: 120px;
+}
 .company-subheader{
     font-family: 'Silkscreen', sans-serif;
     font-size: 1.2em;
@@ -91,6 +112,15 @@
 }
 
 @media only screen and (max-width:500px){
+    .company-info{
+        gap: 0.8rem;
+    }
+    .qworks-logo{
+        width: 120px;
+    }
+    .mindgate-logo{
+        width: 95px;
+    }
     .company-header{
         font-size: 2em;
     }
@@ -112,6 +142,15 @@
 }
 
 @media only screen and (max-width:405px){
+    .company-info{
+        gap: 0.6rem;
+    }
+    .qworks-logo{
+        width: 95px;
+    }
+    .mindgate-logo{
+        width: 75px;
+    }
     .company-header{
         font-size: 1.7em;
     }
@@ -133,6 +172,15 @@
 }
 
 @media only screen and (max-width:280px){
+    .company-info{
+        gap: 0.5rem;
+    }
+    .qworks-logo{
+        width: 70px;
+    }
+    .mindgate-logo{
+        width: 55px;
+    }
     .company-header{
         font-size: 1em;
     }
