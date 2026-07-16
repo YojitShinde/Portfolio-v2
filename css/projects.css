@@ -82,9 +82,34 @@
     text-align: center;
 }
 .project-vid{
-    width: 600px;
+    width: 800px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+.hotel-null-gallery{
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    grid-template-rows: repeat(2, minmax(180px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hotel-null-image{
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+.hotel-null-image--tall{
+    grid-row: 1 / span 2;
+}
+.hotel-null-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .project-body{
     font-family: 'Silkscreen', sans-serif;
@@ -98,6 +123,10 @@
         border: 1px solid #ddd;
         border-radius: 4px;
     }
+    .hotel-null-gallery{
+        width: 450px;
+        grid-template-rows: repeat(2, minmax(150px, 1fr));
+    }
 }
 
 @media only screen and (max-width:1000px){
@@ -105,6 +134,10 @@
         width: 350px;
         border: 1px solid #ddd;
         border-radius: 4px;
+    }
+    .hotel-null-gallery{
+        width: 350px;
+        gap: 0.75rem;
     }
     .projects-header{
         font-size: 1.8em;
@@ -131,6 +164,14 @@
         width: 250px;
         border: 1px solid #ddd;
         border-radius: 4px;
+    }
+    .hotel-null-gallery{
+        width: 250px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .hotel-null-image--tall{
+        grid-row: auto;
     }
     .projects-header{
         font-size: 1.8em;
@@ -178,6 +219,10 @@
         border: 1px solid #ddd;
         border-radius: 4px;
     }
+    .hotel-null-gallery{
+        width: 200px;
+        gap: 0.5rem;
+    }
     .printer{
         width: 40px;
     }
@@ -188,6 +233,10 @@
         width: 150px;
         border: 1px solid #ddd;
         border-radius: 4px;
+    }
+    .hotel-null-gallery{
+        width: 150px;
+        gap: 0.4rem;
     }
     .projects-header{
         font-size: 1em;
